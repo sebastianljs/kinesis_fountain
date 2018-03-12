@@ -8,7 +8,7 @@ def setup_package():
         description="A library for AWS kinesis analytics app integration and testing",
         author="Sebastian Lin",
         author_email="sebastianljs@gmail.com",
-        keywords="AWS",
+        keywords="AWS Kinesis",
         license="MIT",
         packages=find_packages(),
         python_requires=">=3.6.*",
