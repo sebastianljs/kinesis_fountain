@@ -1,9 +1,13 @@
+"""
+Abstract base class for all kinesis_fountain resources
+"""
 from abc import ABCMeta, abstractmethod
 import boto3
 
+
 class BaseResource(metaclass=ABCMeta):
     """
-    This is the abstract base class for all kinesis_fountain resources
+    Abstract base class for all kinesis_fountain resources
     Attributes:
         client  The type of boto3 client to pass on to subclasses
     """
