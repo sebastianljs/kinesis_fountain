@@ -13,5 +13,20 @@ class BaseResource(metaclass=ABCMeta):
         :param resource_type:
         :type resource_type: str
         """
-        pass
+        self.client = boto3.client(resource_type)
 
+    @abstractmethod
+    def exists(self) -> bool:
+        """
+        Check if resource exists
+        :return: True if resource exists
+        """
+        raise NotImplementedError
+
+    @property
+    def resource_arn(self) -> str:
+        """
+        Gets the resource arn
+        :return: resource arn
+        """
+        raise NotImplementedError
