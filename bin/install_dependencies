@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+set -eux
+SCRIPT_DIR=$(dirname "$0")
+
+# Enter root dir context
+cd "$SCRIPT_DIR/.." || exit
+echo "Executing in $PWD"
+pip install -r "$PWD/requirements.txt"
+pip install -U "$PWD"
+
+
+
+
+
+
+
