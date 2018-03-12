@@ -2,3 +2,5 @@ language: python
 python:
   - "3.6"
 install: ./bin/install_dependencies
+script:
+  - python -m unittest tests
